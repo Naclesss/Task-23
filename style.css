@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+body.light-mode .main {
+  background-color: white;
+}
+
+body.dark-mode .main {
+  background-color: #444;
+}
+
+.main {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: "Ubuntu", sans-serif;
+}
+
+body.light-mode {
+  background-color: #9b82ff;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+#input-name {
+  border: 1px solid #c8c8c8;
+  border-radius: 7px;
+  height: 26px;
+  width: 225px;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+#input-name:focus {
+
+  border: 2px solid #9b82ff;
+}
+
+#btn-add {
+  background-color: #9b82ff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+#btn-add:hover {
+  background-color: #7f6fd3;
+  transition: background-color 0.3s ;
+}
+#theme-switcher {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  
+}
+body.dark-mode #theme-switcher:hover {
+  background-color: #7f6fd3;
+}
+#theme-switcher:hover {
+  background-color:  #d9b3ff;
+  transition: background-color 0.3s ;
+}
+
+li {
+  list-style-type: none;
+
+}
+#to-do-list {
+  padding: 10px 20px;
+}
+
+.delete {
+  font-family: "Ubuntu", sans-serif;
+  background-color:  #ff6666; 
+  border: none; 
+  color: white; 
+  padding: 5px 10px; 
+  margin-left: 10px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ; 
+}
+
+.delete:hover {
+  background-color: #e60000; /* Darker red on hover */
+}
+
